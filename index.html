@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./assests/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">
+        SPLI <br />
+        TTER
+      </h1>
+      <div class="calculator">
+        <div class="left">
+          <div class="inner">
+            <div class="bill">
+              <label for="bill">Bill</label>
+              <div class="input-wrapper">
+                <img id="dollar" src="./images/icon-dollar.svg" alt="dollar" />
+                <input type="number" id="bill" placeholder="0" />
+              </div>
+            </div>
+            <div class="select-tip">
+              <label for="select-tip">Select Tip %</label>
+              <div class="tip-buttons">
+                <button class="tip-button">5%</button
+                ><button class="tip-button">10%</button
+                ><button class="tip-button">15%</button
+                ><button class="tip-button">25%</button
+                ><button class="tip-button">50%</button>
+                <input type="number" class="custom-tip" placeholder="Custom" />
+              </div>
+            </div>
+            <div class="people">
+              <label for="num-people">Number of People</label>
+              <div class="error-message">Can't be zero</div>
+              <div class="input-wrapper">
+                <img id="person" src="./images/icon-person.svg" alt="person" />
+                <input type="number" id="num-people" placeholder="0" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="inner">
+            <div class="result">
+              <div class="tip-amount">
+                Tip Amount <br /><span>/ person</span>
+              </div>
+              <div id="tip-calculated">$0.00</div>
+            </div>
+            <div class="result">
+              <div class="total-amount">
+                Total
+                <span>
+                  <br />
+                  / person</span
+                >
+              </div>
+              <div id="total-calculated">$0.00</div>
+            </div>
+            <button class="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assests/scripts/script.js"></script>
+  </body>
+</html>
